@@ -4,3 +4,11 @@
   </h1>
 </div>
 
+  <div *ngIf="isLogged(); else loginButton">
+    <button (click)="logout()">Log out</button>
+  </div>
+  <ng-template #loginButton>
+      <button (click)="login()">Log in</button>
+  </ng-template>
+
+<router-outlet></router-outlet>
