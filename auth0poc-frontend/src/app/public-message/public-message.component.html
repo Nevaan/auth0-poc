@@ -1,0 +1,8 @@
+<div *ngIf="message$ | async as msg">
+  <p>
+    {{msg.msg}}
+  </p>
+  <p>
+    SendDate: {{msg.greetingDate}}
+  </p>
+</div>

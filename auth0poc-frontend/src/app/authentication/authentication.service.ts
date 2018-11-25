@@ -13,6 +13,7 @@ export class AuthenticationService {
   auth0 = new auth0.WebAuth({
     clientID: environment.auth0clientId,
     domain: environment.auth0domain,
+    audience: environment.audience,
     responseType: 'token id_token',
     redirectUri: environment.auth0callbackUri,
     scope: 'openid'

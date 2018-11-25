@@ -12,7 +12,6 @@ export class PrivateAreaGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {
-    console.log('Guard activated!');
     return this.authService.isAuthenticated();
   }
 }

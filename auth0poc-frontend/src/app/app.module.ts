@@ -8,19 +8,21 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NaviBarComponent } from './navi-bar/navi-bar.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { PrivateAccessModule } from './private-access/private-access.module';
-import { PrivateAccessRoutingModule } from './private-access/private-access-routing.module';
 import { CallbackComponent } from './callback/callback.component';
-
+import { PublicMessageComponent } from './public-message/public-message.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     NaviBarComponent,
-    CallbackComponent
+    CallbackComponent,
+    PublicMessageComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AuthenticationModule,
     PrivateAccessModule,
     AppRoutingModule
